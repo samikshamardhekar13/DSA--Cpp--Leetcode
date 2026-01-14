@@ -22,3 +22,13 @@ Therefore:
       st = 1
       end = n - 2
       
+EXAMPLE
+Input
+arr = [0, 2, 4, 6, 5, 3, 1]
+
+Output
+3
+
+Explanation:
+6 is the peak value
+Index of 6 is 3
