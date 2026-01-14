@@ -19,3 +19,13 @@ Since the array is sorted, we can use binary search
        If A[mid] == A[mid-1] → move right
     Else → move left
 6.Continue until the single element is found.
+
+EXAMPLE
+Input
+nums = [1,1,2,3,3,4,4,8,8]
+
+Output
+2
+
+Explanation:
+Every number appears twice except 2, which appears once.
