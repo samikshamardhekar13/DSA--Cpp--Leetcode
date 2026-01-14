@@ -24,3 +24,13 @@ Idea:
 ** Why currSum += val is important:
   It allows us to extend the current subarray.
   Using currSum = val would only consider single elements, not subarrays.
+
+ EXAMPLE
+ Input
+ nums = [−2, 1, −3, 4, 5]
+
+ Output
+ 9
+
+Explanation
+The contiguous subarray [4, 5] has the largest sum 4 + 5 = 9.
