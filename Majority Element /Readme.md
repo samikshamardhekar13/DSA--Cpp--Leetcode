@@ -26,7 +26,17 @@ Steps:
 4.Decrease frequency otherwise.
 Complexity
 Time Complexity: O(n)
-
-Time Complexity: O(n)
-
 Space Complexity: O(1)
+
+EXAMPLE
+Input
+nums = [3, 2, 3, 3, 1]
+
+Output
+3
+
+Explanation
+Count occurrences:
+3 → 3 times
+2 → 1 time
+1 → 1 time
