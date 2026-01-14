@@ -25,6 +25,13 @@ This ensures the permutation increases by the smallest possible amount.
 4. Reverse the Suffix
 Reverse the subarray from:
 pivot + 1  to  end
-
-
 This puts the suffix in ascending order, making the result the next immediate permutation.
+
+EXAMPLE
+Input
+nums = [1, 3, 5, 4, 2]
+
+Output
+[1, 4, 2, 3, 5]
+
+SINCE Next lexicographically greater arrangement after [1,3,5,4,2] is [1,4,2,3,5]
