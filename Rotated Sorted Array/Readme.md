@@ -16,3 +16,15 @@ In a rotated sorted array, at least one half (left or right) is always sorted.
 * Otherwise → search in the other half
 5.If the loop ends without finding the target, return -1
 
+ EXAMPLE
+ Input
+ nums = [4,5,6,7,0,1,2]
+ target = 0
+
+ Output
+ 4
+
+Explanation
+The array was originally sorted as [0,1,2,4,5,6,7]
+After rotation, 0 is found at index 4
+
