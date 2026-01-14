@@ -17,3 +17,13 @@ Count how many times it appears consecutively.
    Write each digit of the count individually into the array.
 5.Move to the next group of characters.
 6.Resize the array to the final compressed length.
+
+EXAMPLE
+Input
+chars = ["a","a","b","b","c","c","c"]
+
+Output
+["a","2","b","2","c","3"]
+
+Return Value
+6
