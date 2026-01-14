@@ -22,3 +22,16 @@ Idea:
 ** Why currSum += val is important:
   It allows us to extend the current subarray.
   Using currSum = val would only consider single elements, not subarrays.
+
+EXAMPLE
+Input
+nums = [4, 3, 6, 2, 1, 1]
+
+Output
+Repeated = 1, Missing = 5
+
+Explanation
+The array should contain [1, 2, 3, 4, 5, 6].
+Observed array: [4, 3, 6, 2, 1, 1]
+1 appears twice → repeated
+5 is missing → missing number
