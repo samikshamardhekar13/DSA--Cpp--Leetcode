@@ -30,3 +30,16 @@ Output array ans → Not counted as extra space (required to store the result)
 Prefix products → Stored directly in ans, no extra array used
 Suffix product → Stored in a single variable
 ]
+
+EXAMPLE:
+Input
+nums = [1, 2, 3, 4]
+
+Output
+[24, 12, 8, 6]
+
+Explanation
+For index 0: 2 × 3 × 4 = 24
+For index 1: 1 × 3 × 4 = 12
+For index 2: 1 × 2 × 4 = 8
+For index 3: 1 × 2 × 3 = 6
