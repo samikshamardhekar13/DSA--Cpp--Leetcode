@@ -1,0 +1,25 @@
+Given a 2D matrix where:
+Each row is sorted in ascending order
+The first element of each row is greater than the last element of the previous row
+
+ # Approach
+The solution uses two-level Binary Search:
+1. Binary Search on Rows
+  Treat each row as a range
+  Find the row where: mat[row][0] ≤ target ≤ mat[row][n - 1]
+
+2. Binary Search within the Row
+   Once the correct row is found, perform binary search on that row
+   This avoids flattening the matrix and keeps the logic simple and efficient.
+
+EXAMPLE
+Input
+matrix = [
+  [1, 3, 5, 7],
+  [10, 11, 16, 20],
+  [23, 30, 34, 60]
+]
+target = 3
+
+Output
+true
