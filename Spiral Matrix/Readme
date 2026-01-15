@@ -1,0 +1,42 @@
+# Approach
+We traverse the matrix layer by layer using four boundaries:
+  srow → starting row
+  erow → ending row
+scol → starting column
+ecol → ending column
+At each step, we traverse:
+1.Top row (left → right)
+2.Right column (top → bottom)
+3.Bottom row (right → left) (only if rows remain)
+4.Left column (bottom → top) (only if columns remain)
+  After completing one layer, we shrink the boundaries and repeat until all elements are visited.
+
+# Algorithm Steps
+1.Initialize four pointers for matrix boundaries.
+2.Loop while srow <= erow and scol <= ecol.
+3.Traverse:
+  Top row
+  Right column
+  Bottom row (if valid)
+  Left column (if valid)
+4.Update boundaries after each spiral layer.
+5.Store visited elements in a result vector.
+
+# Boundary Case 
+While traversing the matrix in spiral order, special care must be taken to avoid duplicate elements when the matrix reduces to a single row or a single column.
+Why Boundary Checks Are Needed
+During spiral traversal:
+ 1.The top row and bottom row may become the same
+ 2.The left column and right column may become the same
+If we blindly traverse all four directions, elements at the corners will be added more than once.
+
+EXAMPLE
+Input
+matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]
+
+Output
+[1, 2, 3, 6, 9, 8, 7, 4, 5]
