@@ -1,0 +1,20 @@
+Given a 2D matrix where:
+Each row is sorted in ascending order
+Each column is sorted in ascending order
+Determine whether a given target value exists in the matrix.
+
+# Approach: Staircase Search
+This approach starts from the top-right corner of the matrix and eliminates one row or one column at each step.
+  Why Top-Right?
+  Moving left decreases the value
+  Moving down increases the value
+
+# Algorithm
+1.Initialize:
+r = 0 (first row)
+c = n - 1 (last column)
+2.While r < m and c >= 0:
+If mat[r][c] == target → return true
+If mat[r][c] > target → move left (c--)
+Else → move down (r++)
+3.If traversal ends, return false.
