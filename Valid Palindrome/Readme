@@ -1,0 +1,22 @@
+# Approach
+This solution uses:
+  1.Two-pointer technique
+  2.Character filtering
+  3.Case-insensitive comparison
+
+# Algorithm
+1.Initialize two pointers:
+  start at the beginning of the string
+  end at the end of the string
+2.While start < end:
+  Skip characters that are not alphanumeric.
+  Compare characters at start and end after converting both to lowercase.
+  If they differ, return false.
+3.If all valid characters match, return true.
+
+EXAMPLE:
+Input
+"A man, a plan, a canal: Panama"
+
+Output
+true
