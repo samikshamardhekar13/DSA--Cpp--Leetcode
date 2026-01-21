@@ -1,0 +1,9 @@
+Fibonacci numbers are a sequence of numbers where each number is the sum of the two numbers before it.
+eg:0, 1, 1, 2, 3, 5, 8, 13, ...
+
+# Approach
+The solution uses recursion to calculate Fibonacci numbers.
+1.Base cases:
+   If n is 0 or 1, return n.
+2.Recursive case:
+   Return fib(n-1) + fib(n-2).
