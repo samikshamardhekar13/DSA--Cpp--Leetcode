@@ -1,0 +1,22 @@
+# Approach
+This solution uses backtracking with sorting and skipping duplicates.
+Key Ideas:
+1.Sort the array first
+  Groups duplicate elements together
+2.Backtracking
+  At each index, choose to include or exclude the current element
+3.Skip duplicates during exclusion
+  Prevents generating the same subset multiple times
+
+EXAMPLE:
+Input
+nums = [1,2,2]
+
+Output
+[1,2,2]
+[1,2]
+[1]
+[2,2]
+[2]
+[]
+
