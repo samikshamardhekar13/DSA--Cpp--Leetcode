@@ -1,0 +1,27 @@
+# Approach Used
+Steps:
+1.Create a frequency array (freq) for string s1.
+2.For every possible window of size s1.length() in s2:
+3.Create a new frequency array (windFreq) for the current window.
+4.Compare both frequency arrays using isFreqSame().
+  If both frequency arrays match, a permutation exists → return true.
+  If no window matches, return false.
+
+# Functions Used
+1.isFreqSame(int freq1[], int freq2[])
+  Compares two frequency arrays of size 26.
+  Returns true if both arrays are identical.
+2.checkInclusion(string s1, string s2)
+  Main function that checks all possible substrings of s2.
+  Uses brute-force window checking.
+
+EXAMPLE
+Input:
+s1 = "ab"
+s2 = "eidbaooo"
+
+Output:
+true
+
+Explanation:
+Substring "ba" is a permutation of "ab".
