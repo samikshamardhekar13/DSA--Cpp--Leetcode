@@ -1,0 +1,17 @@
+# Approach Used
+This solution reverses the entire string first, then reverses each word individually to restore correct word spelling while keeping the word order reversed.
+
+#Steps
+1.Reverse the whole string s.
+2.Traverse the reversed string character by character.
+3.Extract each word (sequence of non-space characters).
+4.Reverse the extracted word.
+5.Append it to the answer string with a single space.
+6.Remove the extra leading space before returning the result.
+
+EXAMPLE
+Input:
+s = "  hello   world  "
+
+Output:
+"world hello"
