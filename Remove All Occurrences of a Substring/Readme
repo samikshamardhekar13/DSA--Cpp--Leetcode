@@ -1,0 +1,23 @@
+# Approach
+1.Continuously search for the substring part inside s
+2.If found, remove it using erase
+3.Repeat until part no longer appears in s
+
+# Algorithm
+1.While the string s is not empty:
+  Use find() to check if part exists in s
+2. If found:
+  Remove the substring using erase(position, length)
+3.Repeat until part is no longer found
+4.Return the modified string
+
+EXAMPLE:
+Input:
+s = "daabcbaabcbc"
+part = "abc"
+
+Process:
+daabcbaabcbc → dabaabcbc → dababc → dab
+
+Output:
+"dab"
