@@ -1,0 +1,25 @@
+# Approach
+This solution uses Backtracking:
+Place one queen per row
+For each cell, check if placing a queen is safe
+If safe, place the queen and move to the next row
+If no valid placement exists, backtrack and try another column
+
+# Key Functions
+1.isSafe(...)
+  Checks whether a queen can be placed at position (row, col) by verifying:
+  Same row (horizontal)
+  Same column (vertical)
+  Upper-left diagonal
+  Upper-right diagonal
+
+2.nQueens(...)
+  A recursive backtracking function that:
+  Tries placing a queen in every column of the current row
+  Stores the board when all n queens are successfully placed
+  Backtracks if a placement leads to no solution
+
+3.solveNQueens(int n)
+  Initializes the board with '.'
+  Calls the recursive backtracking function
+  Returns all valid board configurations
